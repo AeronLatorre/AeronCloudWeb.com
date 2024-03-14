@@ -1,0 +1,109 @@
+/*#E90808*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'arial', arial;
+    box-sizing: border-box;
+    background-image: url(/images/BSUbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    animation: fade-in 1s forwards;
+}
+
+.menubar {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: -24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.logoutBtn {
+    width: 29px;
+    height: 29px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: ease-in-out 0.1s;
+    border: none;
+    background-repeat: no-repeat;
+    background: url(/images/logout.png);
+}
+
+.logoutBtn:hover {
+    width: 29px;
+    background-repeat: no-repeat;
+    background: url(/images/logoutHover.png);
+}
+
+.homeBtn {
+    width: 33px;
+    height: 30px;
+    margin-top: 25px;
+    margin-right: 100px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: ease-in-out 0.1s;
+    border: none;
+    background-repeat: no-repeat;
+    background: url(/images/home.png);
+}
+
+.homeBtn:hover {
+    width: 34px;
+    background-repeat: no-repeat;
+    background: url(/images/homeHover.png);
+}
+
+.titleContainer {
+    background-image: url(/images/TitleHome.png);
+    width: 500px;
+    height: 100%;
+}
+
+.titleContainerView {
+    background-image: url(/images/TitleViewAttendanceLogs.png);
+    width: 500px;
+    height: 100%;
+}
+
+.logo {
+    margin-top: 2%;
+    margin-left: 45%;
+    position: absolute;
+    width: 175px;
+}
+/*
+.menuViewAttendance {
+    position: fixed;
+    margin-left: 22%;
+    margin-top: 6%;
+    width: 900px;
+    height: 1000px;
+    background-image: url(images/menuViewAttendance.png);
+    background-repeat: no-repeat;   
+}
+*/
+@keyframes fade-in {
+    from {
+        background-color: rgba(#000, 0.25);
+        opacity: 0;
+    }
+
+    to {
+        background-color: rgba(#000, 0);
+        opacity: 1;
+    }
+}
